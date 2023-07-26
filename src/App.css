@@ -27,37 +27,51 @@
 .App-link {
   color: #61dafb;
 }
-/* my css start */
-.img-wrapper img {
-  width: 80px;
-}
-.cart-wrapper {
-  width: 600px;
-  height: 150px;
-  border: 2px solid #282c34;
-  margin-left: 10%;
-}
-.img-wrapper button {
+/*  */
+.btn-wrapper button {
   background-color: red;
-  color: white;
   border: 0px;
   padding: 15px;
-  border-radius: 5px;
-  margin-top: 30px;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: #333 0px 1px 5px;
+}
+.img-wrapper img {
+  width: 70px;
+  margin-top: -10px;
+}
+.cart-wrapper {
+  height: 120px;
+  width: 500px;
+  border: 1px solid #ccc;
+  margin-left: 10%;
 }
 .item {
   float: left;
-  padding: 20px;
+  display: inline-block;
   width: 120px;
   padding: 20px;
+  height: 70px;
 }
 .add-to-cart img {
-  width: 100px;
+  width: 80px;
   position: absolute;
   right: 1%;
   top: 1%;
 }
-/* my css end */
+.cart-count {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  z-index: 1;
+  background-color: red;
+  padding: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+}
+/*  */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

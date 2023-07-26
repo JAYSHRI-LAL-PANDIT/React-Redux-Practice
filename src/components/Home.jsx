@@ -1,31 +1,28 @@
 import React from "react";
 
-function Home() {
+function Home(props) {
   return (
-    <>
-      <div className="add-to-cart">
-        <img
-          src="https://static.thenounproject.com/png/47398-200.png"
-          alt="AddToCart"
-        />
-      </div>
+    <div>
       <h1>Home Component</h1>
       <div className="cart-wrapper">
         <div className="img-wrapper item">
-          <img
-            src="https://rukminim2.flixcart.com/image/850/1000/k2jbyq80pkrrdj/mobile-refurbished/c/u/e/iphone-11-pro-512-u-mwcd2hn-a-apple-0-original-imafkg2fhzhzzh5s.jpeg?q=20"
-            alt=""
-          />
+          <img src="https://i.pinimg.com/736x/5b/95/b0/5b95b05d61d9d6c2e055f33b31c1d16d.jpg" />
         </div>
-        <div className="img-wrapper item">
+        <div className="text-wrapper item">
           <span>I-Phone</span>
-          <span>Price: $1000</span>
+          <span>Price: $1000.00</span>
         </div>
-        <div className="img-wrapper item">
-          <button>Add To Cart</button>
+        <div className="btn-wrapper item">
+          <button
+            onClick={() => {
+              props.addToCartHandler({ pice: 1000, name: "i phone 11" });
+            }}
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default Home;
