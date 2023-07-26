@@ -27,7 +27,37 @@
 .App-link {
   color: #61dafb;
 }
-
+/* my css start */
+.img-wrapper img {
+  width: 80px;
+}
+.cart-wrapper {
+  width: 600px;
+  height: 150px;
+  border: 2px solid #282c34;
+  margin-left: 10%;
+}
+.img-wrapper button {
+  background-color: red;
+  color: white;
+  border: 0px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.item {
+  float: left;
+  padding: 20px;
+  width: 120px;
+  padding: 20px;
+}
+.add-to-cart img {
+  width: 100px;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+/* my css end */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
